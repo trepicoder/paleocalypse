@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "paleocalypse",
+  "version": "${version}",
+  "name": "Paleocalypse",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/trepicoder/paleocalypse"
+  },
+  "license": "MIT",
+  "icon": "assets/paleocalypse/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      "com.github.trepicoder.paleocalypse.server.PaleocalypseServer"
+    ],
+    "client": [
+      "com.github.trepicoder.paleocalypse.client.PaleocalypseClient"
+    ],
+    "main": [
+      "com.github.trepicoder.paleocalypse.Paleocalypse"
+    ]
+  },
+  "mixins": [
+    "paleocalypse.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
